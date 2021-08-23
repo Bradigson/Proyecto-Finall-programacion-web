@@ -1,0 +1,515 @@
+@import url(./bootstrap/bootstrap.css);
+
+.mb-3{
+    position:relative;
+    z-index:100;
+    width: 250px;
+color:whitesmoke;
+padding: 20px 20px 30px 20px;
+background-color:rgba(0,0,0,.4);
+font-size: 20px;
+border-radius:1em;
+}
+div{
+    padding: 5px 5px 40px 5px; 
+}
+
+/*bradigson update*/
+/*sesion1*/
+.validation{
+    position:absolute;
+    z-index:120;
+    background:rgba(0,0,0,.4);
+    backdrop-filter: blur(5px);
+    width:100%;
+    height:100%;
+    top:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+.alert{
+    background:#fff;
+    width:95%;
+    height:200px;
+    
+}
+#alert-btn{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+
+
+.sesion1{
+    height:650px;
+    background:url(../imgs/4.jpg);
+    background-size:cover;
+    padding-top:50px;
+    position:relative;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    
+    
+
+}
+.title > h1{
+    color:rgb(233, 110, 110);
+    text-shadow:1px 2px 1px rgba(0,0,0,0.5)
+    
+}
+.title{
+    position:absolute;
+    width:100%;
+    margin-top:-20px;
+}
+.boton{
+    display:flex;
+    justify-content:center;
+}
+#boton{
+    box-shadow:none;
+
+}
+#copyright{
+    position:absolute;
+    bottom:0px;
+    display:flex;
+    justify-content:center;
+    color:#fff;
+}
+#cloud1, #cloud2, #cloud3, #cloud4, #cloud5{
+    position:absolute;
+    width:100px;
+    left:10px;
+}
+#cloud2{
+    top:300px;
+    left:150px;
+}
+#cloud3{
+    bottom:80px;
+}
+#cloud4{
+    margin-top:-60px;
+    left:150px;
+}
+#cloud5{
+    margin-top:100px;
+}
+
+
+@media screen and (min-width:360px){
+    .mb-3{
+        width:320px;
+    }
+
+    #cloud1, #cloud2, #cloud3, #cloud4, #cloud5{
+        position:absolute;
+        width:130px;
+        left:10px;
+    }
+    #cloud2{
+        top:300px;
+        left:210px;
+    }
+    #cloud3{
+        bottom:80px;
+    }
+    #cloud4{
+        margin-top:-60px;
+        left:190px;
+    }
+    #cloud5{
+        margin-top:150px;
+    }
+}
+
+@media screen and (min-width:411px){
+    .mb-3{
+        width:350px;
+    }
+    .sesion1{
+        height:830px;
+    }
+
+    #cloud1, #cloud2, #cloud3, #cloud4, #cloud5{
+        position:absolute;
+        width:160px;
+        left:10px;
+    }
+    #cloud2{
+        top:300px;
+        left:240px;
+    }
+    #cloud3{
+        bottom:180px;
+    }
+    #cloud4{
+        margin-top:-60px;
+        left:225px;
+    }
+    #cloud5{
+        margin-top:150px;
+    }
+    #copyright{
+        bottom:102px;
+    }
+    
+}
+@media screen and (min-width:375px){
+    .mb-3{
+        width:350px;
+    }
+    .sesion1{
+        height:811px;
+        overflow-y:hidden;
+    }
+    #cloud3{
+        bottom:180px;
+    }
+    #copyright{
+        bottom:120px;
+    }
+}
+@media screen and (min-width:414px){
+    .mb-3{
+        width:360px;
+    }
+    .sesion1{
+        height:734px;
+    }
+    #copyright{
+        bottom:40px;
+    }
+    #cloud3{
+        bottom:100px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .alert{
+        background:#fff;
+        width:65%;
+        height:200px;
+        
+    }
+    .sesion1{
+        height:1022px;
+    }
+    .mb-3{
+        width:500px;
+    }
+    #copyright{
+        width:100%;
+    }
+    .title{
+        margin-top:100px;
+    }
+
+
+
+    #cloud1, #cloud2, #cloud3, #cloud4{
+        position:absolute;
+        width:250px;
+        left:1000px;
+        animation: loud 15s infinite reverse linear;
+    }
+    #cloud2{
+        top:300px;
+        animation-timing-function:ease-in;
+        animation-duration:30s;
+    }
+    #cloud3{
+        bottom:180px;
+        animation-timing-function:ease-out;
+        animation-duration:40s;
+    }
+    #cloud4{
+        margin-top:-60px;
+        animation-timing-function:ease-in-out;
+        animation-duration:50s;
+    }
+    #cloud5{
+        margin-top:150px;
+        animation-timing-function:ease;
+        animation-duration:50s;
+    }
+    #cloud5{
+        width:250px;
+        position: relative;
+        z-index:1;
+        top:-100px;
+        left:990px;
+        animation-name:loud;
+        animation-duration:20s;
+        animation-direction:reverse;
+        animation-timing-function:linear;
+    }
+    .sun{
+        position: absolute;
+        background:#fffc48;
+        width:120px;
+        height:120px;
+        border-radius:10em;
+        left:1030px;
+        top:130px;
+        box-shadow:0 0 5px #fffc48,
+        0 0 15px #fffc48,
+        0 0 30px #fffc48,
+        0 0 60px #fffc48;
+        animation-name:loud;
+        animation-duration:20s;
+        animation-direction:reverse;
+        animation-timing-function:linear;
+
+    }
+    
+    #copyright{
+        bottom:102px;
+    }
+
+
+
+    @keyframes loud{
+        0%{
+            transform:translatex(-1300px);
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1024px){
+    .alert{
+        background:#fff;
+        width:55%;
+        height:200px;
+        
+    }
+    .sesion1{
+        height:1022px;
+    }
+    .mb-3{
+        width:700px;
+        padding:0px 60px;
+    }
+    #copyright{
+        width:100%;
+    }
+    .title{
+        margin-top:100px;
+    }
+    .form-label{
+        font-size:40px;
+    }
+    #boton{
+        width:200px;
+    }
+
+
+
+    #cloud1, #cloud2, #cloud3, #cloud4{
+        position:absolute;
+        width:300px;
+        left:1100px;
+        animation: loud 15s infinite reverse linear;
+    }
+    #cloud2{
+        top:300px;
+        animation-timing-function:ease-in;
+        animation-duration:30s;
+    }
+    #cloud3{
+        bottom:180px;
+        animation-timing-function:ease-out;
+        animation-duration:40s;
+    }
+    #cloud4{
+        margin-top:-60px;
+        animation-timing-function:ease-in-out;
+        animation-duration:250s;
+    }
+    #cloud5{
+        margin-top:150px;
+        animation-timing-function:ease;
+        animation-duration:50s;
+    }
+    #cloud5{
+        width:350px;
+        position: relative;
+        z-index:1;
+        top:-100px;
+        left:1020px;
+        animation-name:loud;
+        animation-duration:20s;
+        animation-direction:reverse;
+        animation-timing-function:linear;
+        animation-iteration-count:infinite;
+    }
+    .sun{
+        position: absolute;
+        background:#fffc48;
+        width:140px;
+        height:140px;
+        border-radius:10em;
+        left:1080px;
+        top:130px;
+        box-shadow:0 0 5px #fffc48,
+        0 0 15px #fffc48,
+        0 0 30px #fffc48,
+        0 0 60px #fffc48;
+        animation-name:loud;
+        animation-duration:20s;
+        animation-direction:reverse;
+        animation-timing-function:linear;
+        animation-iteration-count:infinite;
+
+
+    }
+    
+    #copyright{
+        bottom:102px;
+    }
+
+    .sesion1{
+        height:1350px;
+    }
+
+
+
+    @keyframes loud{
+        0%{
+            transform:translatex(-1300px);
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1026px){
+  
+
+    .alert{
+        background:#fff;
+        width:35%;
+        height:200px;
+        
+        
+    }
+
+    .login{
+        position:relative;
+        top:-150px;
+        z-index:100;
+    }
+
+    .title{
+    
+        top:-25px;
+
+    }
+
+    #cloud1, #cloud2, #cloud3, #cloud4{
+        position:absolute;
+        width:300px;
+        left:1500px;
+        animation: loud 15s infinite reverse linear;
+    }
+   
+    #cloud2{
+        top:300px;
+        animation-timing-function:ease-in;
+        animation-duration:30s;
+    }
+    #cloud3{
+        bottom:20px;
+        animation-timing-function:ease-out;
+        animation-duration:50s;
+    }
+    #cloud4{
+        margin-top:-60px;
+        animation-timing-function:ease-in-out;
+        animation-duration:50s;
+    }
+    #cloud5{
+        margin-top:150px;
+        animation-timing-function:ease;
+        animation-duration:50s;
+    }
+    #cloud5{
+        width:300px;
+        position: relative;
+        z-index:1;
+        top:-100px;
+        left:1500px;
+        animation-name:loud;
+        animation-duration:20s;
+        animation-direction:reverse;
+        animation-timing-function:linear;
+        animation-iteration-count:infinite;
+    }
+    .sun{
+        position: absolute;
+        background:#fffc48;
+        width:110px;
+        height:140px;
+        border-radius:10em;
+        left:1550px;
+        top:130px;
+        box-shadow:0 0 5px #fffc48,
+        0 0 15px #fffc48,
+        0 0 30px #fffc48,
+        0 0 60px #fffc48;
+        animation-name:loud;
+        animation-duration:20s;
+        animation-direction:reverse;
+        animation-timing-function:linear;
+        animation-iteration-count:infinite;
+
+
+    }
+    
+    #copyright{
+        bottom:102px;
+    }
+
+    .sesion1{
+        height:750px;
+    }
+
+
+
+    @keyframes loud{
+        0%{
+            transform:translatex(-1850px);
+        }
+    }
+
+    #h1{
+        display:none;
+    }
+    @keyframes  h1{
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+    #boton{
+        display:none;
+    }
+
+
+    .mb-3{
+        height:380px;
+    }
+}
+
+

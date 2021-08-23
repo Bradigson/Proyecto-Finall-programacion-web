@@ -83,6 +83,7 @@ div{
     position:absolute;
     width:100px;
     left:10px;
+    opacity:.5;
 }
 #cloud2{
     top:300px;
